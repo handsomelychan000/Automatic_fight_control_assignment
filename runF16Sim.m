@@ -67,6 +67,7 @@ elseif fi_flag == 2;
   fi_flag_Simulink = 1;
 else
   disp('Invalid selection');
+  return;
 end
 
 %% Trim aircraft to desired altitude and velocity
@@ -104,6 +105,7 @@ elseif dis_flag == 'n'
   surfacedef = 'none';  %do nothing
 else
   disp('Invalid Selection');
+  return;
 end
 disp(newline);
 disp(newline);
@@ -154,7 +156,8 @@ fclose(fid_trim);
 
 plot_flag = input('Plot results (y/n):  ', 's');
 
-if plot_flag == 'n';
+if plot_flag == 'n'
+  return;
 else
   graphF16;
 end

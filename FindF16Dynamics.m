@@ -1,4 +1,3 @@
-
 %================================================
 %     Matlab Script File used to linearize the 
 %     non-linear F-16 model. The program will 
